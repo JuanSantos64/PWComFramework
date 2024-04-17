@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <script src="./assets/js/cadastrar.js" defer></script>
+    <title>TrueFinal - Nova Tarefa</title>
+</head>
+
+<body>
+    <h2>Register New Game</h2>
+    <form action="">
+        <div class="nes-field">
+            <label for="titulo">Game Name</label>
+            <input type="text" id="titulo" class="nes-input">
+            <span id="titulo-error" class="nes-text is-error"></span>
+        </div>
+        <div>
+            <label for="descricao">Describe your experience</label>
+            <textarea id="descricao" class="nes-textarea"></textarea>
+            <span id="descricao-error" class="nes-text is-error"></span>
+        </div>
+        <div class="nes-field">
+            <label for="pontos">Duration in hours</label>
+            <input type="number" id="pontos" class="nes-input">
+            <span id="pontos-error" class="nes-text is-error"></span>
+        </div>
+
+        <div>
+
+            <label for="">Did you liked this game?</label>
+            <label>
+                <input type="radio" class="nes-radio" name="answer" checked />
+                <span>Yes</span>
+              </label>
+              
+              <label>
+                <input type="radio" class="nes-radio" name="answer" />
+                <span>No</span>
+              </label>
+        </div>
+
+        <div class="botoes">
+            <a href="/" type="button" class="nes-btn is-error">Cancel</a>
+            <button id="botao-cadastrar" type="button" class="nes-btn is-primary">Register</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
